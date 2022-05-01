@@ -1,0 +1,12 @@
+<!--pages/forum/forum.wxml-->
+
+<i-panel title="基础用法">
+  <i-input value="{{ value0 }}" type="textarea"  placeholder="标题"  bindchange="inputTitle"/>
+    <i-input value="{{ value1 }}" type="textarea"  placeholder="输入学习感悟（不超过150字）" maxlength="150" bindchange="inputCommon" />
+</i-panel>
+<i-button bind:click="handleClick" type="success" shape="circle" size="small">记录</i-button>
+
+<block wx:for="{{coupledatas}}">
+    <i-cell title="{{item.title}}" is-link ></i-cell>
+</block>
+<i-toast id="toast" />

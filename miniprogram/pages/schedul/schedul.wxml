@@ -1,0 +1,6 @@
+<!--pages/schedul/schedul.wxml-->
+<i-panel title="无标题输入框">
+        <i-input value="{{value2}}" type="textarea" title="学号" placeholder="输入学号查询课表" bindchange="inputID" />
+    </i-panel>
+<i-button bind:click="handleClick" type="primary" size="small">获取课表</i-button>
+<image src="{{imagePath}}"></image>

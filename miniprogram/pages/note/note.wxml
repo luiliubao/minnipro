@@ -1,0 +1,2 @@
+<!--pages/note/note.wxml-->
+<i-button bind:click="handleClick" type="success" shape="circle" size="small">上传笔记</i-button>

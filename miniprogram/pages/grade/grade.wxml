@@ -1,0 +1,16 @@
+<!--pages/grade/grade.wxml-->
+<i-panel title="基础用法">
+    <picker bindchange="bindGradePickerChange" value="{{index}}" range="{{gradeInfos}}" range-key="name">
+        <view class="picker">
+            <i-input value="{{gradeName}}" class="picker" title="科目" placeholder="请选择需要查询的科目" disabled />
+        </view>
+    </picker>
+</i-panel>
+
+<i-panel title="无标题输入框">
+    <i-input value="{{value2}}" type="textarea" title="学号" placeholder="输入学号查询成绩" bindchange="inputID" />
+</i-panel>
+<i-button bind:click="handleClick" type="primary" size="small">获取成绩</i-button>
+<block wx:for="{{add_leavedatas}}">
+    <i-cell title="学号:{{item.id}}" value="成绩:{{item.grade}}"></i-cell>
+</block>

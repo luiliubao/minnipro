@@ -1,0 +1,14 @@
+<!--pages/addGrade/addGrade.wxml-->
+<i-panel title="基础用法">
+    <picker bindchange="bindGradePickerChange" value="{{index}}" range="{{gradeInfos}}" range-key="name">
+        <view class="picker">
+            <i-input value="{{gradeName}}" class="picker" title="科目" placeholder="请选择需要录入的科目" disabled />
+        </view>
+    </picker>
+</i-panel>
+
+<i-panel title="无标题输入框">
+        <i-input value="{{value2}}" type="textarea" title="学号" placeholder="输入学号" bindchange="inputID" />
+        <i-input value="{{value3}}" type="textarea" title="成绩" placeholder="输入成绩" bindchange="inputGrade" />
+    </i-panel>
+<i-button bind:click="handleClick" type="primary" size="small">录入</i-button>

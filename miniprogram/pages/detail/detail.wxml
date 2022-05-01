@@ -1,0 +1,10 @@
+<!--pages/detail/detail.wxml-->
+<i-panel title="基础用法">
+    <i-input value="{{ value1.departName }}" title="学院：" disabled />
+    <i-input value="{{ value1.className }}" title="班级：" disabled />
+    <i-input value="{{ value1.idName }}" title="学号：" disabled />
+    <i-input value="{{ value1.studentName }}" title="姓名：" disabled />
+    <i-input value="{{ value1.date }}" title="请假日期：" disabled />
+    <i-input value="{{ value1.time }}" title="请假时间：" disabled />
+    <i-input value="{{ value1.content }}"  disabled />
+</i-panel>

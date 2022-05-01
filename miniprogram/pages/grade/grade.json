@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-input": "../../dist/input/index",
+    "i-button": "../../dist/button/index",
+    "i-alert": "../../dist/alert/index",
+    "i-toast": "../../dist/toast/index"
+  },
+  "navigationBarTitleText": "成绩信息"
+}

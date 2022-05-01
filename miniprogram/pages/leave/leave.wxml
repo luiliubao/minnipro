@@ -1,0 +1,11 @@
+<!--pages/leave/leave.wxml-->
+<block wx:for="{{add_leavedatas}}">
+  <navigator url="../detail/detail?id={{item._id}}">
+    <i-cell title="{{item.studentName}}" is-link ></i-cell>
+  </navigator>
+</block>
+<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed="true" color="green">
+  <i-tab-bar-item key="homepage" icon="editor" current-icon="editor" title="添加请假">
+  </i-tab-bar-item>
+</i-tab-bar>
+<i-toast id="toast" />

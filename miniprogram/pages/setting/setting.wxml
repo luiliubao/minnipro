@@ -1,0 +1,17 @@
+<view class="container">
+	<view class="section panel" style="width: 700rpx; height: 174rpx; display: block; box-sizing: border-box">
+	  <text class="section_title">学习时长(分钟)</text>
+	  <view class="section_body">
+	    <slider 
+	    	bindchange="changeWorkTime" 
+	    	show-value="true" 
+	    	min="1"
+	    	max="60"
+	    	value="{{workTime}}"
+	    	left-icon="cancel" 
+	    	right-icon="success_no_circle"/>
+	  </view>
+	</view>
+
+
+</view>

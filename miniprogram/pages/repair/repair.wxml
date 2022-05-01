@@ -1,0 +1,37 @@
+<!--pages/repair/repair.wxml-->
+
+
+<i-panel title="基础用法">
+  <i-panel title="无标题输入框">
+    <i-input value="{{className}}" type="textarea" title="申请人" placeholder="输入申请人姓名" bindchange="getApplicantName" />
+  </i-panel>
+
+  <i-panel title="基础用法">
+    <i-panel title="无标题输入框">
+      <i-input value="{{classId}}" type="textarea" title="申请人学号" placeholder="输入申请人学号" bindchange="getApplicantId" />
+    </i-panel>
+  </i-panel>
+
+  <i-panel title="无标题输入框">
+
+    <picker bindchange="bindTypePickerChange" value="{{index}}" range="{{types}}" range-key="name">
+      <view class="picker">
+        <i-input value="{{typeName}}" class="picker" title="报修类型" placeholder="选择报修类型" disabled />
+      </view>
+    </picker>
+  </i-panel>
+
+
+  <i-panel title="无标题输入框">
+    <i-input value="{{ address }}" type="textarea" title="故障宿舍" bindchange='getAddress' placeholder="输入宿舍名称" />
+  </i-panel>
+  <i-panel title="无标题输入框">
+    <i-input value="{{ description }}" title="故障现象" bindchange='getDescription' type="textarea" placeholder="输入故障现象" />
+  </i-panel>
+  <i-panel title="无标题输入框">
+    <i-input value="{{ remarks }}" bindchange='getRemarks' type="textarea" placeholder="本周哪节无人上课" />
+  </i-panel>
+</i-panel>
+
+<i-button bind:click="handleClick" type="success">提交</i-button>
+<i-toast id="toast" />

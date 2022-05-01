@@ -1,0 +1,9 @@
+<!--pages/register/register.wxml-->
+<input value="{{id}}" placeholder="请输入用户名" bindinput="getId"></input>
+<input value="{{password}}" placeholder="请输入密码" bindinput="getPassword"></input>
+<input value="{{name}}" placeholder="请输入姓名" bindinput="getName"></input>
+<input value="{{sex}}" placeholder="请输入性别" bindinput="getSex"></input>
+<input value="{{depart}}" placeholder="请输入学院" bindinput="getDepart"></input>
+<input value="{{class}}" placeholder="请输入班级" bindinput="getClass"></input>
+<input value="{{tel}}" placeholder="请输入电话" bindinput="getTel"></input>
+<button bindtap="Register">注册</button>

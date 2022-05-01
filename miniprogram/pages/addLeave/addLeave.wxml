@@ -1,0 +1,38 @@
+<!--pages/addLeave/addLeave.wxml-->
+<i-panel title="基础用法">
+    <picker bindchange="bindDepartPickerChange" value="{{index}}" range="{{departInfos}}" range-key="name">
+        <view class="picker">
+            <i-input value="{{departName}}" class="picker" title="学院" placeholder="选择所在学院" disabled />
+        </view>
+    </picker>
+
+    <i-panel title="无标题输入框">
+        <i-input value="{{ applicantNam}}" type="textarea" title="所在班级" placeholder="输入所在班级" bindchange="inputClass" />
+    </i-panel>
+
+    <i-panel title="无标题输入框">
+        <i-input value="{{idName}}" type="textarea" title="学号" placeholder="输入学号" bindchange="inputId" />
+    </i-panel>
+
+    <i-panel title="无标题输入框">
+        <i-input value="{{studentName}}" type="textarea" title="学生姓名" placeholder="输入学生姓名" bindchange="inputStudent" />
+    </i-panel>
+
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+            <i-input value="{{ date }}" start="2017-09-01" end="2060-09-01" title="请假日期" placeholder="选择日期" disabled />
+        </view>
+    </picker>
+
+    <picker mode="time" value="{{time}}" start="06:00" end="22:00" bindchange="bindTimeChange">
+        <view class="picker">
+            <i-input value="{{ time }}" title="请假时间" placeholder="选择时间" disabled />
+        </view>
+    </picker>
+
+</i-panel>
+<i-panel title="无标题输入框">
+    <i-input value="{{ content }}" type='textarea' placeholder="请输入请假原因" bindchange="contentInput" />
+</i-panel>
+<i-button bind:click="handleClick" type="success">提交</i-button>
+<i-toast id="toast" />

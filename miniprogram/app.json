@@ -1,0 +1,48 @@
+{
+  "pages": [
+   "pages/login/login",
+   "pages/register/register",
+   "pages/home/home",
+   "pages/forum/forum",
+   "pages/consult/consult",
+   "pages/leave/leave",
+   "pages/addLeave/addLeave",
+   "pages/detail/detail",
+   "pages/schedul/schedul",
+   "pages/logs/logs",
+   "pages/setting/setting",
+   "pages/repair/repair",
+   "pages/note/note",
+   "pages/teacher/teacher",
+   "pages/grade/grade",
+   "pages/addGrade/addGrade"
+   ],
+  "window": {
+    "backgroundColor": "#f759ab",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f759ab",
+    "navigationBarTitleText": "学习伴侣",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "i-tab-bar": "dist/tab-bar/index",
+    "i-tab-bar-item": "dist/tab-bar-item/index"
+},
+"tabBar": {
+  "custom": true,
+  "list": [{
+    "pagePath": "pages/home/home",
+    "text": "首页"
+  },
+  {
+    "pagePath": "pages/forum/forum",
+    "text": "校园伴侣"
+  },
+  {
+    "pagePath": "pages/consult/consult",
+    "text": "计时器"
+  }
+]
+},
+  "sitemapLocation": "sitemap.json"
+}
